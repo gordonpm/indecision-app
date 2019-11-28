@@ -50,7 +50,7 @@ var IndecisionApp = function (_React$Component) {
             }
             this.setState(function (prevState) {
                 return {
-                    options: prevState.options.concat(option)
+                    options: prevState.options.concat(option) //Add new option to the options array
                 };
             });
         }
@@ -80,6 +80,8 @@ var IndecisionApp = function (_React$Component) {
 
     return IndecisionApp;
 }(React.Component);
+// Component to display header (title and subtitle)
+
 
 var Header = function (_React$Component2) {
     _inherits(Header, _React$Component2);
@@ -112,6 +114,8 @@ var Header = function (_React$Component2) {
 
     return Header;
 }(React.Component);
+// Component which displays the "What should I do" button
+
 
 var Action = function (_React$Component3) {
     _inherits(Action, _React$Component3);
@@ -142,6 +146,8 @@ var Action = function (_React$Component3) {
 
     return Action;
 }(React.Component);
+// Component which displayes all existing options and a button "Remove All"
+
 
 var Options = function (_React$Component4) {
     _inherits(Options, _React$Component4);
@@ -172,6 +178,8 @@ var Options = function (_React$Component4) {
 
     return Options;
 }(React.Component);
+// Child Component of Options
+
 
 var Option = function (_React$Component5) {
     _inherits(Option, _React$Component5);
@@ -195,6 +203,8 @@ var Option = function (_React$Component5) {
 
     return Option;
 }(React.Component);
+// Component which displays the form to add a new option
+
 
 var AddOption = function (_React$Component6) {
     _inherits(AddOption, _React$Component6);

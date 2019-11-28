@@ -28,7 +28,7 @@ class IndecisionApp extends React.Component {
         }
         this.setState((prevState) => {
             return {
-                options: prevState.options.concat(option)
+                options: prevState.options.concat(option) //Add new option to the options array
             };
         });
     }
@@ -53,7 +53,7 @@ class IndecisionApp extends React.Component {
         )
     }
 }
-
+// Component to display header (title and subtitle)
 class Header extends React.Component {
     render() {
         return (
@@ -64,7 +64,7 @@ class Header extends React.Component {
         )
     }
 }
-
+// Component which displays the "What should I do" button
 class Action extends React.Component {
     render() {
         return (
@@ -78,7 +78,7 @@ class Action extends React.Component {
         )
     }
 }
-
+// Component which displayes all existing options and a button "Remove All"
 class Options extends React.Component {
     render() {
         return (
@@ -92,7 +92,7 @@ class Options extends React.Component {
         )
     }
 }
-
+// Child Component of Options
 class Option extends React.Component {
     render() {
         return (
@@ -102,7 +102,7 @@ class Option extends React.Component {
         )
     }
 }
-
+// Component which displays the form to add a new option
 class AddOption extends React.Component {
     constructor(props) {
         super(props);
