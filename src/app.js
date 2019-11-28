@@ -9,11 +9,7 @@ class IndecisionApp extends React.Component {
         }
     }
     handleDeleteOptions() {
-        this.setState(() => {
-            return {
-                options: []
-            };
-        });
+        this.setState(() => ({ options: [] })); // property of arrow function when returning object
     }
     handlePick() {
         const randomNum = Math.floor(Math.random() * this.state.options.length);
@@ -26,11 +22,12 @@ class IndecisionApp extends React.Component {
         else if (this.state.options.indexOf(option) >= 0) {
             return 'this option already exists';
         }
-        this.setState((prevState) => {
-            return {
-                options: prevState.options.concat(option) //Add new option to the options array
-            };
-        });
+        // this.setState((prevState) => {
+        //     return {
+        //         options: prevState.options.concat(option) //Add new option to the options array
+        //     };
+        // });
+        this.setState((prevState) => ({ options: prevState.options.concat(option) }));
     }
     render() {
         const title = 'Indecision';
@@ -120,6 +117,7 @@ class AddOption extends React.Component {
                 error
             };
         });
+        this.setState(() => ({ error }));
     }
     render() {
         return (
