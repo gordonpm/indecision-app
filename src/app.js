@@ -9,6 +9,15 @@ class IndecisionApp extends React.Component {
             options: []
         }
     }
+    componentDidMount() {
+        console.log('ComponentDidMount');
+    }
+    componentDidUpdate() {
+        console.log('ComponentDidUpdate');
+    }
+    componentWillUnmount() { // not used very often. This is called when IndecisionApp component goes away.
+        console.log('ComponentWillUnmount');
+    }
     handleDeleteOptions() {
         this.setState(() => ({ options: [] })); // property of arrow function when returning object
     }
