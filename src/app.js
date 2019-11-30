@@ -1,3 +1,7 @@
+// Use command: 
+// babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+// to automatically update app.js with React syntax
+
 class IndecisionApp extends React.Component {
     constructor(props) {
         super(props);
