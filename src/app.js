@@ -81,9 +81,6 @@ class IndecisionApp extends React.Component {
     }
 }
 
-
-
-
 // Component which displayes all existing options and a button "Remove All"
 const Options = (props) => {
     return (
@@ -103,10 +100,6 @@ const Options = (props) => {
         </div>
     )
 }
-
-
-
-
 
 // Stateless functional Component
 // const User = (props) => {
