@@ -1,0 +1,15 @@
+//import './utils.js';
+//import { square } from './utils.js';
+// import isSenior, { isAdult, canDrink } from './person.js';
+
+// console.log('new webpack setup!');
+
+// console.log(isAdult(25));
+// console.log(canDrink(31));
+// console.log(isSenior(70));
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const template = <p>THIS IS JSX FROM WEBPACK</p>;
+ReactDOM.render(template, document.getElementById('app'));
