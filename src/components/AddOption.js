@@ -1,5 +1,4 @@
 // Component which displays the form to add a new option
-
 import React from 'react';
 
 export default class AddOption extends React.Component {
